@@ -1,0 +1,18 @@
+[project]
+name = "paradroid-tui"
+version = "0.1.0"
+description = "Terminal Paradroid — transfer your consciousness between droids"
+requires-python = ">=3.10"
+dependencies = [
+    "textual>=0.80,<10",
+]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["paradroid_tui"]
+
+[tool.setuptools.package-data]
+paradroid_tui = ["tui.tcss"]
