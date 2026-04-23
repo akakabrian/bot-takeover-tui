@@ -399,9 +399,11 @@ async def s_status_panel_refreshes(app, pilot):
 async def s_reset_key_works(app, pilot):
     # Manually advance the engine a few ticks, then press r, expect a
     # near-zero tick count (interval may fire once post-reset).
+    start = app.game.tick_count
     for _ in range(10):
         app.game.tick()
-    assert app.game.tick_count == 10
+    # Real-time interval may also have fired, so accept >= start+10.
+    assert app.game.tick_count >= start + 10, app.game.tick_count
     await pilot.press("r")
     await pilot.pause()
     assert app.game.tick_count < 5, app.game.tick_count

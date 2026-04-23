@@ -159,6 +159,14 @@ class TransferGame:
     def _maybe_finish(self) -> None:
         if self.player_left <= 0 and self.opp_left <= 0:
             self._finalize()
+            return
+        # Auto-pass if the side on turn has nothing left — prevents a
+        # deadlock when one side is exhausted but the other still has
+        # pulses to play (e.g. unequal starting pools in future tuning).
+        if self.turn == "player" and self.player_left <= 0:
+            self.turn = "opp"
+        elif self.turn == "opp" and self.opp_left <= 0:
+            self.turn = "player"
 
     def _finalize(self) -> None:
         won_rows = sum(1 for v in self.rows if v > 0)

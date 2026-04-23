@@ -381,6 +381,10 @@ class ParadroidApp(App):
             self.message_log.write("[rgb(220,180,90)]↺ reset[/]")
 
     def action_help(self) -> None:
+        # Pause real time while the help modal is up; on_screen_resume
+        # clears the flag when the modal is dismissed.
+        if self.game is not None and self.game.transfer is None:
+            self.paused = True
         self.push_screen(HelpScreen())
 
     # ---- transfer flow ---------------------------------------------
