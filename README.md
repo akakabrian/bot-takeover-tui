@@ -1,4 +1,4 @@
-# paradroid-tui
+# bot-takeover-tui
 Transfer up. Survive. Clear.
 
 ![Hero](screenshots/hero.svg)
@@ -15,8 +15,8 @@ Aboard a drifting freighter, you are a small, unarmed security droid. The others
 
 ## Install & Run
 ```bash
-git clone https://github.com/akakabrian/paradroid-tui
-cd paradroid-tui
+git clone https://github.com/akakabrian/bot-takeover-tui
+cd bot-takeover-tui
 make
 make run
 ```

@@ -1,4 +1,4 @@
-"""End-to-end playtest harness for paradroid-tui.
+"""End-to-end playtest harness for bot-takeover-tui.
 
     python -m tests.playtest
 
@@ -16,7 +16,7 @@ import asyncio
 import sys
 from pathlib import Path
 
-from paradroid_tui.app import ParadroidApp
+from bot_takeover_tui.app import ParadroidApp
 
 OUT = Path(__file__).resolve().parent / "out"
 OUT.mkdir(exist_ok=True)

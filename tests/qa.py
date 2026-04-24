@@ -1,4 +1,4 @@
-"""Headless QA driver for paradroid-tui.
+"""Headless QA driver for bot-takeover-tui.
 
     python -m tests.qa
     python -m tests.qa transfer
@@ -13,13 +13,13 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Awaitable, Callable
 
-from paradroid_tui import droids as D
-from paradroid_tui import engine as E
-from paradroid_tui.app import ParadroidApp
-from paradroid_tui.deck import generate as gen_deck, room_at
-from paradroid_tui.engine import (ACT_DOWN, ACT_FIRE, ACT_LEFT, ACT_RIGHT,
+from bot_takeover_tui import droids as D
+from bot_takeover_tui import engine as E
+from bot_takeover_tui.app import ParadroidApp
+from bot_takeover_tui.deck import generate as gen_deck, room_at
+from bot_takeover_tui.engine import (ACT_DOWN, ACT_FIRE, ACT_LEFT, ACT_RIGHT,
                                   ACT_TRANSFER, ACT_UP, Droid, Game)
-from paradroid_tui.transfer import TransferGame
+from bot_takeover_tui.transfer import TransferGame
 
 OUT = Path(__file__).resolve().parent / "out"
 OUT.mkdir(exist_ok=True)

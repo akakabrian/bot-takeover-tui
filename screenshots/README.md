@@ -1,4 +1,4 @@
-# paradroid-tui screenshots
+# bot-takeover-tui screenshots
 
 ![hero](hero.svg)
 

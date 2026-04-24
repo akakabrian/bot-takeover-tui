@@ -162,12 +162,12 @@ No `ctypes` zero-copy needed — we're pure-Python, single struct per droid.
 ## Layout
 
 ```
-paradroid-tui/
+bot-takeover-tui/
 ├── paradroid.py                  # entry: argparse → run(...)
 ├── pyproject.toml
 ├── Makefile
 ├── DECISIONS.md                  # this file
-├── paradroid_tui/
+├── bot_takeover_tui/
 │   ├── __init__.py
 │   ├── engine.py                 # Ship, Droid, Bullet, Game, tick
 │   ├── droids.py                 # class 001..999 table + AI selectors

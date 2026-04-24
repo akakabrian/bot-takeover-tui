@@ -1,4 +1,4 @@
-"""Performance baseline for paradroid-tui.
+"""Performance baseline for bot-takeover-tui.
 
     python -m tests.perf
 """
@@ -7,8 +7,8 @@ from __future__ import annotations
 
 import time
 
-from paradroid_tui import engine as E
-from paradroid_tui.engine import Game
+from bot_takeover_tui import engine as E
+from bot_takeover_tui.engine import Game
 
 
 def bench(name: str, fn, n: int = 100):

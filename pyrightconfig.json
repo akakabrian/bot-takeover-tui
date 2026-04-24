@@ -1,6 +1,6 @@
 {
     "venvPath": ".",
     "venv": ".venv",
-    "include": ["paradroid_tui", "tests", "paradroid.py"],
+    "include": ["bot_takeover_tui", "tests", "paradroid.py"],
     "reportMissingImports": "error"
 }
