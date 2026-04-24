@@ -1,4 +1,7 @@
 # bot-takeover-tui
+
+> Inspired by Paradroid (1985, Hewson Consultants). Trademarks belong to their respective owners. Unaffiliated fan project.
+
 Transfer up. Survive. Clear.
 
 ![Hero](screenshots/hero.svg)
